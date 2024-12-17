@@ -1,14 +1,27 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="25.0.3">
   <diagram name="Pagina-1" id="hjiToe1_ZOf-AYvRISSp">
-    <mxGraphModel dx="2954" dy="1140" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="588" dy="547" grid="1" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="BK6vMqv7cdCsDTtU8rD8-1" value="Entity" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="360" width="160" height="120" as="geometry" />
+        <mxCell id="BK6vMqv7cdCsDTtU8rD8-1" value="Allocatiepunt" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;collapsible=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="160" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="BK6vMqv7cdCsDTtU8rD8-2" value="+Attribute1&#xa;+Attribute2&#xa;+Attribute3" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="BK6vMqv7cdCsDTtU8rD8-1">
-          <mxGeometry y="50" width="160" height="70" as="geometry" />
+        <mxCell id="BK6vMqv7cdCsDTtU8rD8-2" value="# EAN-code" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="BK6vMqv7cdCsDTtU8rD8-1">
+          <mxGeometry y="50" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="BK6vMqv7cdCsDTtU8rD8-3" value="&lt;a href=&quot;https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/energie-uitwisseling&quot;&gt;Uitgewisseld volume&lt;/a&gt;" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;collapsible=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="420" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="BK6vMqv7cdCsDTtU8rD8-4" value="&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;# beginmoment&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;● eindmoment&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;# &lt;a href=&quot;https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/afname&quot;&gt;energierichting&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;# eenheid&lt;br&gt;&lt;div&gt;● &lt;a href=&quot;https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/bieding-redispatch&quot;&gt;waarde&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="BK6vMqv7cdCsDTtU8rD8-3">
+          <mxGeometry y="50" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="BK6vMqv7cdCsDTtU8rD8-5" value="# op" style="endArrow=ERmandOne;html=1;rounded=0;startArrow=ERzeroToMany;startFill=0;endFill=0;" edge="1" parent="1" source="BK6vMqv7cdCsDTtU8rD8-3" target="BK6vMqv7cdCsDTtU8rD8-1">
+          <mxGeometry x="-0.4" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="350" as="sourcePoint" />
+            <mxPoint x="80" y="300" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
