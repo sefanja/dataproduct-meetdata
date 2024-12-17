@@ -1,6 +1,21 @@
 # Conceptueel informatiemodel bij Dataproduct Meetdata
 
-![Diagram](Meetdata2.drawio.svg)
+```mermaid
+erDiagram
+  Allocatiepunt {
+    ID EAN-code
+  }
+  "Uitgewisseld volume" {
+    ID beginmoment
+    V eindmoment
+    ID energierichting
+    ID eenheid
+    V waarde
+  }
+  "Uitgewisseld volume" }o--|| Allocatiepunt : "op (ID)"
+```
+
+---
 
 ### Allocatiepunt
 
@@ -9,6 +24,8 @@ administratief punt waar invoeding, onttrekking of verbruik van elektriciteit of
 | Eigenschap | Definitie | Waarden |
 | ---------- | --------- | ------- |
 | EAN-code   | Europees artikelnummer | *18 cijfers*
+
+---
 
 ### Uitgewisseld volume
 
