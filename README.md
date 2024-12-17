@@ -1,6 +1,6 @@
 # Conceptueel informatiemodel bij Dataproduct Meetdata
 
-![Alt text here](Meetdata2.drawio.svg)
+![Diagram](Meetdata2.drawio.svg)
 
 ### Allocatiepunt
 
