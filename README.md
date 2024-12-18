@@ -2,24 +2,37 @@
 
 ```mermaid
 erDiagram
+  Aansluiting {
+    v *EAN-code
+  }
   Allocatiepunt {
-    ID EAN-code
+    v *EAN-code
   }
+  Allocatiepunt }|--|| Aansluiting : "bij"
   "Uitgewisseld volume" {
-    ID beginmoment
-    V eindmoment
-    ID energierichting
-    ID eenheid
-    V waarde
+    v *beginmoment
+    v eindmoment
+    v *energierichting
+    v *eenheid
+    v waarde
   }
-  "Uitgewisseld volume" }o--|| Allocatiepunt : "op (ID)"
+  "Uitgewisseld volume" }o--|| Allocatiepunt : "*op"
 ```
+
+---
+
+### Aansluiting
+recht op het gebruik van één of meer verbindingen tussen een energienet en een onroerende zaak ([begrippen.netbeheernederland.nl](https://begrippen.netbeheernederland.nl/energiesysteembeheer/nl/page/aansluiting))
+
+| Eigenschap | Definitie | Waarden |
+| ---------- | --------- | ------- |
+| EAN-code   | Europees artikelnummer | *18 cijfers*
 
 ---
 
 ### Allocatiepunt
 
-administratief punt waar invoeding, onttrekking of verbruik van elektriciteit of gas wordt toegerekend aan een marktdeelnemer (bron: [Wetsvoorstel Energiewet](https://www.tweedekamer.nl/kamerstukken/wetsvoorstellen/detail?cfg=wetsvoorsteldetails&qry=wetsvoorstel%3A36378))
+administratief punt waar invoeding, onttrekking of verbruik van elektriciteit of gas wordt toegerekend aan een marktdeelnemer ([Wetsvoorstel Energiewet](https://www.tweedekamer.nl/kamerstukken/wetsvoorstellen/detail?cfg=wetsvoorsteldetails&qry=wetsvoorstel%3A36378))
 
 | Eigenschap | Definitie | Waarden |
 | ---------- | --------- | ------- |
@@ -29,7 +42,7 @@ administratief punt waar invoeding, onttrekking of verbruik van elektriciteit of
 
 ### Uitgewisseld volume
 
-hoeveelheid energie dat is getransporteerd via een bepaald punt
+hoeveelheid energie die is getransporteerd via een bepaald punt
 
 | Eigenschap | Definitie | Waarden |
 | ---------- | --------- | ------- |
