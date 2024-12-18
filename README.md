@@ -38,7 +38,7 @@ recht op het gebruik van één of meer verbindingen tussen een energienet en een
 
 | Eigenschap | Definitie | Waarden |
 | ---------- | --------- | ------- |
-| EAN-code   | Europees artikelnummer | *18 cijfers*
+| EAN-code   | Europees artikelnummer | *18 cijfers* |
 
 ---
 
@@ -48,7 +48,7 @@ administratief punt waar invoeding, onttrekking of verbruik van elektriciteit of
 
 | Eigenschap | Definitie | Waarden |
 | ---------- | --------- | ------- |
-| EAN-code   | Europees artikelnummer | *18 cijfers*
+| EAN-code   | Europees artikelnummer | *18 cijfers* |
 
 ---
 
