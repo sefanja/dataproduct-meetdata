@@ -2,10 +2,10 @@
 
 ```mermaid
 erDiagram
-  "Legenda " }|--|{ Legenda : "minimaal 1"
-  "Legenda " |o--o| Legenda : "maximaal 1"
-  "Legenda " ||--|| Legenda : "exact 1"
-  Legenda {
+  "Legenda " }|--|{ Entiteit : "minimaal 1"
+  "Legenda " |o--o| Entiteit : "maximaal 1"
+  "Legenda " ||--|| Entiteit : "exact 1"
+  Entiteit {
     v *identificerende_eigenschap
     v verplichte_eigenschap
     o optionele_eigenschap
