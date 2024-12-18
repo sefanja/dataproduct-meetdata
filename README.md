@@ -2,13 +2,25 @@
 
 ```mermaid
 erDiagram
+  "Legenda " }|--|{ Legenda : "minimaal 1"
+  "Legenda " |o--o| Legenda : "maximaal 1"
+  "Legenda " ||--|| Legenda : "exact 1"
+  Legenda {
+    v *identificerende_eigenschap
+    v verplichte_eigenschap
+    o optionele_eigenschap
+    a afleidbare_eigenschap
+  }
+
   Aansluiting {
     v *EAN-code
   }
+
   Allocatiepunt {
     v *EAN-code
   }
   Allocatiepunt }|--|| Aansluiting : "bij"
+
   "Uitgewisseld volume" {
     v *beginmoment
     v eindmoment
